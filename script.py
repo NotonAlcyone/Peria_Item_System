@@ -29,7 +29,7 @@ itemData.append(tmpItem)
 
 tmpItem = Item("채팅창")
 tmpItem.addStringAct(0)
-tmpItem.addOutputTrans("첫번째 수는 [X] 입니다.")
+tmpItem.addOutputTrans("첫번째의 수는 [X] 입니다")
 itemData.append(tmpItem)
 
 tmpItem = Item("채팅창")
@@ -46,7 +46,7 @@ itemData.append(tmpItem)
 
 tmpItem = Item("산술 소자")
 tmpItem.addInputCast("두 수 전달",0)
-tmpItem.addCalc("-",0)
+tmpItem.addCalc("+",0)
 tmpItem.addOutputTrans("결과는 [Z] 입니다.")
 itemData.append(tmpItem)
 
@@ -67,3 +67,4 @@ itemTable.append(itemData[4])
 
 actStarter(0) #1번 채팅창 입력
 actStarter(1) #2번 채팅창 입력
+

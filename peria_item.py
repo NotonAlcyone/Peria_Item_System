@@ -1,3 +1,4 @@
+from postpositions import *
 itemData = []
 itemTable = []
 
@@ -119,7 +120,7 @@ def calcCheck(itemNumber,trans): #산술소자...하드코딩...
 		answer = X / Y
 	elif Sign == "//":
 		answer = X // Y
-	elif Sign == "%"::
+	elif Sign == "%":
 		answer = X % Y
 	elif Sign == "max":
 		answer = max(X,Y)
@@ -137,5 +138,12 @@ def outputCheck(itemNumber,link):
 	item.outputCast[link].trans = item.act[0].trans #채팅창에서 입력받은 데이터를 output으로 옮깁니다.
 	for i in range(0,len(itemTable)): #받아온 output과 같은 명령을 가진 input을 찾습니다
 		for j in range(0,len(itemTable[i].inputCast)):
-			if itemTable[i].inputCast[j].name == item.outputCast[link].name:
+			if post_Swithcer(itemTable[i].inputCast[j].name) == post_Swithcer(item.outputCast[link].name):
 				inputCheck(i,itemTable[i].inputCast[j].name,item.outputCast[link].trans) #해당 인풋에 정보를 넣어줍니다.
+
+def post_Swithcer(string):
+	for i in range(0,len(case)):
+		string = string.replace(case[i],"")
+	string = string.replace(" ","")
+	return string
+

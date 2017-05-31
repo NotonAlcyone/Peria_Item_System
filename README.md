@@ -13,5 +13,4 @@
 
 ## 기타
 * 프로젝트에 관한 질문은 [메일](notonalcyone@gmail.com)로 부탁드립니다.
-
-
+* JOSA.txt 의 [출처](http://nlp.kookmin.ac.kr/data/han-dic.html)
