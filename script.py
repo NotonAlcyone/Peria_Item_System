@@ -26,10 +26,21 @@ tmpItem.addOutputCast("불을 켜라")
 tmpItem.addOutputCast("불을 꺼라")
 itemData.append(tmpItem)
 
+tmpItem = Item("채팅창")
+tmpItem.addStringAct(0)
+tmpItem.addOutputTrans("첫번째 수는 [X] 입니다.")
+itemData.append(tmpItem)
+
+tmpItem = Item("채팅창")
+tmpItem.addInputCast("첫번째 수는 [X] 입니다.",0)
+tmpItem.addStringAct()
+itemData.append(tmpItem)
+
 
 itemTable.append(itemData[0])
 itemTable.append(itemData[1])
 itemTable.append(itemData[2])
 
 
-starter(2,"스위치를 켜라")
+
+inputStarter(2)
