@@ -54,7 +54,6 @@ class Cast:
 
 
 def inputStarter(itemNumber,name = None): #명령으로 시작
-	print("하지마루용")
 	if name == None: #시작할때 직접 명령하는 용도
 		print("행동을 입력해주세요")
 		name = input()
