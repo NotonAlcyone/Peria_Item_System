@@ -85,7 +85,7 @@ def actCheck(itemNumber, link, trans):
 				print("채팅창에 다음과 같은 결과가 나왔습니다.")
 				print(item.act[0].trans[0])#문자열은 1개만 인자를 받으므로 0번 고정입니다.
 		if item.act[link].act != None: #모듈에 act가 있다면
-			print("모듈이 다음과 같은 움직임을 보입니다")
+			print(item.name + " 모듈이 다음과 같은 움직임을 보입니다")
 			print(item.act[link].act) #GUI적 움직임 대신에 act를 나타냅니다
 		if item.act[link].link != None: #해당 액트가 가리키는 output이 있다면
 			outputCheck(itemNumber,link) #해당 아웃풋의 정보를 보냅니다.
