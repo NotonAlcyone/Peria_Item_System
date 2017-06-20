@@ -1,16 +1,17 @@
 # Peria Item System
 
-[유투브 페리아 연대기 아이템 설명](https://youtu.be/hEO4A5k6o2w?list=PLTgBeN24zClL73zU6CbvXuCqWXlvrRgtd)을 참고로 파이썬 CUI을 이용해 최대한 비슷하게 구현합니다
+[유투브 페리아 연대기 아이템 설명](https://youtu.be/hEO4A5k6o2w?list=PLTgBeN24zClL73zU6CbvXuCqWXlvrRgtd)을 참고로 파이썬 CLI을 이용해 최대한 비슷하게 구현합니다
 
 ![default](https://user-images.githubusercontent.com/15938440/27004656-c14402ce-4e47-11e7-85d1-c8deabee2ae4.png)
 
 
-## 사용프로그램
+## 사용 언어
 * Python 3
 
 ## 사용법
 
 프로젝트의 peria_item.py 를 import 하고 빌드합니다.
+* CLI 의 pause를 지정하지 않았기에 에디터로의 실행을 권장합니다.
 
 ## 스크립트 설명
 
@@ -49,14 +50,14 @@ className.addStringAct()
 ```python
 className.addSync(outputNum)
 ```
-* 동기화 모듈에 관한 스크립트입니다.
+* 동기화 모듈을 추가하는 스크립트입니다.
 * outputNum은 행동을 완료한후, 실행 할 output을 선택합니다.
 
 ### 산술 모듈
 ```python
 className.addCalc("부호", outputNum)
 ```
-* 산술모듈과 관련된 스크립트 입니다.
+* 산술모듈을 추가하는 스크립트 입니다.
 * 부호는 문자열로 "+, -, *, /, //, %, max, min, ^, **" 을 받습니다.
 * outputNum은 행동을 완료한후, 실행 할 output을 선택합니다.
 
@@ -195,11 +196,11 @@ Deactivate Light
 
 ```python
 채팅을 입력해주세요
->>> 5
+>>> 4
 채팅을 입력해주세요
 >>> 6
 채팅창에 다음과 같은 결과가 나왔습니다.
-11
+10
 ```
 
 ## 기타
